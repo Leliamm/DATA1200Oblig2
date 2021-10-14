@@ -1,191 +1,133 @@
-    /* phone*/
+/* Hoved bakgrunn*/ 
 
-  @media only screen and (max-width: 600px){
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)
+}
 
-    /* General •The whole page sets linear gradient with the following values “(135deg, #f5f7fa 0%, #c3cfe2 100%)” 
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
 
-•The main font will be “Lato” and sans-serif will be defined as fallback font. 
+h1{
+   font-size: 4rem;
+}
 
-•The default browser font size must be set to 14px  
+h2{
+    font-size: 2.2rem;
+}
 
-•The default font size for the ontents of the page will be 1.2rem  
+p {
+    max-width: 70ch;
+    line-height: 1.5;
+} 
 
-•The headings (h1-h3) will use “Montserrat” type face and sans-serif as a fallback font. 
+header {
+    background-image: url("assets/img/studentsbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;  
+   
+}
 
-•H1 elements will have a size of 4rem 
+header div {
+    display: block;
+    position: relative; 
+    text-align: center;
+    size: inherit;
+    overflow: visible; 
+    padding: 1.5rem 0rem;
+}
 
-•H2 elements will have a size of 2.2rem 
+header div, footer {
+    background-color: #c5192d;
+    color: white;
+    text-align: center;
+}
+footer {
+    padding: auto;
+    margin-top: 2rem;
+}
+a {
+    color: white;
+}
+header div, main, footer {
+    margin: 0rem auto;   
+    align-content: center;
+    text-align:center;
+}
 
-•The paragraph will never exceed 70ch wide and the distance the distance between lines of text will be set to 1.5  */
-    html *{
-        font-family: 'Lato', sans-serif;
-        font-size: 14px;
-        font-size: 1.2rem;
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        }
-
-    h1, h2, h3 {
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    h1{
-       font-size: 4rem;
-    }
-
-    h2{
-        font-size: 2.2rem;
-    }
-
-    p {
-        max-width: 70ch;
-        line-height: 1.5;
-    } 
-
-    main {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-      }
-/*Emily */
-/*The container will be 55vh tall
-• It sets a background image (“studentsbg.png” from assets/img folder)
-• The background image will not scroll with the page
-• The background image will be placed at the top of the screen, and it will 
-be centered horizontally
-• The background image will be scaled “as large as possible to fill the 
-container, stretching the image if necessary. If the proportions of the 
-image differ from the element, it is cropped either vertically or 
-horizontally so that no empty space remains”
-• The background colour of the div inside the header is #c5192d
-• The div inside the header will be pushed down 4rem (i.e.: it is positioned 
-relative to its nearest positioned ancestor which is the header)
- */
-
-    header{
-  
-        height: 55vh;
-        background-image: url("assets/img/studentsbge.png");
-        background-size: 100vW;
-        padding-bottom: 4rem ;  
-    }
-    header div{
-        
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-attachment: fixed;
-        background-size: 95vw;
-
-        text-align: center;
-    
-        margin: 2.5vw;
-        margin-bottom: 2rem;
-        border: 0px solid;
-        padding-top: 2rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
-        position: relative;
-        top: 5rem;
-        padding-bottom: 2rem;
-
-        z-index: 1;
-        background-color: #c5192d;
-    
-    }
-    header div p{
-        color: #fff;
-        padding-bottom: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        font-size: 1.5rem;
-        text-align: center;
-        
-    }
-    header div h1{
-        color:#fff;
-        font-size: 4rem;
-        padding-top: 2rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
-        text-align: center;
-    }
-
-/*Jakob */
-    main > article {
-        /*The main container contains the several articles of the “newsletter”.             
-       */                 
-        box-shadow: 0px 0px 1px 0px darkgray;  /* •It sets a box shadow where the blur-radius will be 1px. 
-            •The offset-x, offset-y and spread-radius values will be set to 0  •The box shadow’s color is “darkgrey” */ 
-        background-color: whitesmoke; /*•The background color of this element is “whitesmoke”*/ 
-      }
-
-/*Lelia */
-/*  •Look at the mock-up and decide what padding/margin you should use (Figure 1) .
-•The colour of the background is #c5192d (hint: you may need to use pseudo-elements to create this background. 
-If so, you may need to adjust the z-index of the different elements. 
-The z-index accepts both negative and positive values) */
-    #intro-container {
-        padding: 2em;
-        background-color: #c5192d;
-        z-index:1;
-     }
-
-    
-    ul{
-        list-style: none;
-    }
-    
-     ul li:nth-child(1):before {
-        content: "\1F64C   ";
-        width: 1rem;
-        margin-top: 1rem;
-        margin-right: 1rem;
-    }
-      ul li:nth-child(2):before {
-        content: "\1F3EB   ";
-        width: 1rem;
-    }
-     
-           ul li:nth-child(3):before {
-          content: "\1F4DA   ";
-          width: 1rem;
-      }
-
-      
-/*Kaja */
-/* You may notice that the “odd” articles (except the first one) have the <img> first 
-(html code) and then the div with the text. Therefore, the images might be displayed in a way that it is not 
-consistend for the user (see Figure 2). •(Optional task) make sure the text will be displayed on top of the 
-images in all the articles (HINT: check the following codepenand remember that flexbox and grid layout are not allowed) */
-
- article {
-     display: table;
-    }
-
-    img {
-        display: table-footer-group;
-        size: inherit;
-    }
-    div {
-        display: table-header-group;
-    }
+main article {
+    /*The main container contains the several articles of the “newsletter”. */ 
+    box-shadow: 0px 0px 1px 0px darkgray;  /* •It sets a box shadow where the blur-radius will be 1px. 
+        •The offset-x, offset-y and spread-radius values will be set to 0  •The box shadow’s color is “darkgrey” */ 
+    background-color: whitesmoke; /*•The background color of this element is “whitesmoke”*/     
   }
-  
 
-  /*tablet*/
-/* This screen resolution will follow the same rules/styles presented in the previous screen resolution. However, 
-some rules and parts of the layout may change according to the next points 
+#intro-container {
+    margin-top: 6rem;
+    padding: 3em;
+    background-color: #c5192d;
+ }
 
-General configurations 
-•The default browser font size must be set to 16px  
-•The header will be 65vh tall 
-•The 3 main boxes (“Education for all”, main and footer) will now take only 85 percent of the viewport width (check mock-up) 
+ul{
+    list-style: none;
+}
 
-<articles> 
-•Each article will be displayed in a 2-column layout 
-•Each column will be 45% wide and there will be a 10% gap between the two columns(Figure 3). 
-HINT: inline elements add a space between them. 
-Therefore, this will cause the elements to be displayed in a new line if the sum of the width of the elements is greater than 100% 
-(this is 50% + 1space + 50%). CSS tricks to the rescue! 
-(https://css-tricks.com/fighting-the-space-between-inline-block-elements/#set-the-font-size-to-zero ) 
-•Observe that the image is aligned to the top of the container */
+ ul li:nth-child(1):before {
+    content: "\1F64C";
+    width: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+  ul li:nth-child(2):before {
+    content: "\1F3EB";
+    width: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+    ul li:nth-child(3):before {
+    content: "\1F4DA";
+    width: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+ 
+ 
+@media only screen and (max-width: 600px){
+    body {
+        font-size: 14px;        
+    }
+    header {   
+        height: 55vh;        
+    }
+    header div {
+        top: 14rem;
+ }
+
+    header div, main, footer {
+        width: 95vw;
+      }
+      article {
+        display: table;
+       }
+   
+       img {
+           display: table-footer-group;
+           size: inherit;
+       }
+       div {
+           display: table-header-group;
+       }
+    }
+    img {
+        width: 100%;
+    }
+
+
 @media only screen
 and (min-width: 600px)
 and (max-width: 960px){
@@ -196,235 +138,73 @@ and (max-width: 960px){
     header {
         height: 65vh;
     }
+    header div {
+        top: 16rem;     
+    }
     
-    header, main, footer{
+    header div, main, footer{
         width: 85vw;
     }
-/*Emily */
-
-header{
-    background-image: url("assets/img/studentsbge.png");
-    background-size: 100vW;
-    padding-bottom: 4rem ;  
-}
-header div{
-    
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-attachment: fixed;
-
-
-    text-align: center;
-
-    margin: 2.5vw;
-    margin-bottom: 2rem;
-    border: 0px solid;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    position: relative;
-    top: 5rem;
-    padding-bottom: 2rem;
-
-    z-index: 1;
-    background-color: #c5192d;
-
-
-
-}
-header div p{
-    color: #fff;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 1.5rem;
-    text-align: center;
-    
-}
-header div h1{
-    color:#fff;
-    font-size: 4rem;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    text-align: center;
+    article {
+        display: inline-block;    
+        column-count: 2;
+        column-span: 45%;
+        column-gap: 10%;
+    }
+    #intro-container{
+        column-count: 2;
+        column-span: 45%;
+        column-gap: 10%;
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display: inline-block;     
+    }
+    #intro-container {
+        background: linear-gradient(to right,#c5192d 50%, whitesmoke 50%); 
+    }
+    img {
+        width: 100%;
+    }
 }
 
+@media only screen and (min-width: 960px){
+    html {
+        font-size: 24px;  /*The default browser font size must be set to 24px */
+    }
+    header {
+        height: 65vh; /*The header will be 65vh tall*/
+    }
+    header div, main, footer{
+        width: 75vw;
+    }
+    header div {
+        top: 5rem;
+ }
+    article {
+        column-count: 2;
+        column-span: 45%;
+        column-gap: 10%;
+        display: inline-block;
+    }
+    #intro-container{
+        column-count: 2;
+        column-span: 45%;
+        column-gap: 10%;
+        column-rule-style: solid;
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display: inline-block;     
+    }
 
-article {
- display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;  
-}
-
-
-#intro-container{
-    column-count: 2;
-    column-width: 45%;
-    column-gap: 10px;
-    column-rule-style: solid;
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;  
-}
-#intro-container:first-child{
-   background-image:  #c5192d;
-}
-
-}
-
-    /*desktop*/ /* */ 
-    @media only screen and (min-width: 960px){
-        html {
-            font-size: 24px; }/*The default browser font size must be set to 24px */
-        header {
-            height: 65vh; /*The header will be 65vh tall*/
-
-        }
-        header, main, footer{
-            width: 70vw;
-        } /*•The 3 main boxes (“Education for all”, main and footer) will now take only 70percent of the viewport width (check mock-up)  */ 
-              
-        html *{
-            font-family: 'Lato', sans-serif;
-         
-            }
-        h1, h2, h3 {
-                font-family: 'Montserrat', sans-serif;
-        
-        }
-    
-        h1{
-           font-size: 4rem;
-        }
-    
-        h2{
-            font-size: 2.2rem;
-        }
-    
-        p {
-            max-width: 70ch;
-            line-height: 1.5;
-        } 
-
-      
-       main {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-          }
-/*Emily */
-          header {
-            background-image: url("assets/img/studentsbg.png");
-            background-size: 100vW;
-            padding-bottom: 4rem ; 
-            height: 55vh;
-            z-index: -1;
-            background-repeat: no-repeat;
-            background-position: top center;
-            background-attachment: fixed;
-            background-size: 95vw;
-        }
-        header div{
-            vertical-align: bottom;
-            color: ivory;
-            background-color: #c5192d;
-            padding-top: 4rem;
-         
-            text-align: center;
-        
-            margin: 4.5vw;
-            margin-bottom: 1rem;
-            padding-top: 2rem;
-            padding-right: 2rem;
-            padding-left: 2rem;
-            position: relative;
-            top: 5rem;
-            padding-bottom: 2rem;
-                z-index: 1;
-                
-        }
-        header div p{
-            color: #fff;
-            padding-bottom: 1rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            font-size: 1.5rem;
-            text-align: center;
-            
-        }
-        header div h1{
-            color:#fff;
-            font-size: 4rem;
-            padding-top: 2rem;
-            padding-right: 2rem;
-            padding-left: 2rem;
-            text-align: center;
-        }
-
-/*Jakob */
-        main article {
-            /*The main container contains the several articles of the “newsletter”.             
-           */                 
-            box-shadow: 0px 0px 1px 0px darkgray;  /* •It sets a box shadow where the blur-radius will be 1px. 
-                •The offset-x, offset-y and spread-radius values will be set to 0  •The box shadow’s color is “darkgrey” */ 
-            background-color: whitesmoke; /*•The background color of this element is “whitesmoke”*/ 
-          }
-
- /*Lelia */
- /*  •Look at the mock-up and decide what padding/margin you should use (Figure 1) .
- •The colour of the background is #c5192d (hint: you may need to use pseudo-elements to create this background. 
- If so, you may need to adjust the z-index of the different elements. 
- The z-index accepts both negative and positive values) */
-            
-        ul{
-            list-style: none;
-        }
-        
-         ul li:nth-child(1):before {
-            content: "\1F64C   ";
-            width: 1rem;
-            margin-top: 1rem;
-            margin-right: 1rem;
-        }
-          ul li:nth-child(2):before {
-            content: "\1F3EB   ";
-            width: 1rem;
-        }
-         
-               ul li:nth-child(3):before {
-              content: "\1F4DA   ";
-              width: 1rem;
-          }
-
-          
-   /*Kaja */
-/* You may notice that the “odd” articles (except the first one) have the <img> first 
-(html code) and then the div with the text. Therefore, the images might be displayed in a way that it is not 
-consistend for the user (see Figure 2). •(Optional task) make sure the text will be displayed on top of the 
-images in all the articles (HINT: check the following codepenand remember that flexbox and grid layout are not allowed) */
-article {
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-     display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-     display: -ms-flexbox;      /* TWEENER - IE 10 */
-     display: -webkit-flex;     /* NEW - Chrome */
-      }
-   #intro-container{
-       column-count: 2;
-       column-span: 45%;
-       column-gap: 10%;
-       column-rule-style: solid;
-       display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-       display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-       display: -ms-flexbox;      /* TWEENER - IE 10 */
-       display: -webkit-flex;     /* NEW - Chrome */
-    
-   }
-   #intro-container {
-        background: linear-gradient(to right,#c5192d 50%, whitesmoke 50%);
-
-   }
-        
+    #intro-container {
+         background: linear-gradient(to right,#c5192d 50%, whitesmoke 50%);
+ 
+    }
+     img {
+      width: 100%;
+    }   
 }
