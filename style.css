@@ -1,3 +1,4 @@
+  
 /* Hoved bakgrunn felles for alle*/
 @font-face {
     font-family: 'Montserrat';
@@ -52,8 +53,7 @@ header div, main, footer {
 header div {
     display: block;
     position: absolute; 
-    text-align: center;
-    size: inherit;
+    text-align: center;   
     overflow: visible; 
     padding: 1rem 0rem;
     bottom: -4rem;      
@@ -68,7 +68,6 @@ header div, footer {
 }
 
 footer {
-    padding: auto;
     margin-top: 2rem;
 }
 
@@ -115,7 +114,7 @@ ul{
 div {
     display: table-header-group;
     padding-left: 2rem;
-    padding-top: 2rem;
+    padding-top: 2rem;    
 }
 
 article div{
@@ -147,12 +146,10 @@ and (min-width: 600px){
     }
     article {
         column-count: 2;
-        column-span: 45%;
         column-gap: 10%;
     }
     #intro-container{
         column-count: 2;
-        column-span: 45%;
         column-gap: 10%;  
         margin-top: 6rem; 
         background: linear-gradient(to right,#c5192d 50%, whitesmoke 50%); 
